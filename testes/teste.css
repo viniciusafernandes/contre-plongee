@@ -4,10 +4,8 @@
   box-sizing: inherit;
   font-family: 'Montserrat', sans-serif;
 }
-html {
-  font-size: 62.5%;
-}
-body {
+
+.portfolio {
   box-sizing: border-box;
   font-size: 1.6rem;
   background-color: rgb(24, 27, 30);
@@ -111,4 +109,9 @@ body {
 }
 .carousel__btn:hover {
   color: #aaa;
+}
+
+.aport {
+  text-decoration: underline;
+  color: white;
 }
