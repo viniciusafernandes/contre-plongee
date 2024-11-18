@@ -526,7 +526,7 @@ main h4 {
       position: absolute;
       top: 9vh;
       right: 0;
-      width: 40vw;
+      width: 60vw;
       height: 92vh;
       background: #242221;
       flex-direction: column;
@@ -687,19 +687,27 @@ main h4 {
     }
 
     .carousel__item {
+        translate: 0px -30px;
         margin-top: -130px;
-        height: 17rem;
-        width: 11rem;
+        height: 14rem;
+        width: 9rem;
     }
 
     .carousel__btn {
-        margin-top: -100px;
+        translate: 0px -180px;
         height: 2rem;
         width: 2rem;
-        margin-bottom: 100px;
     }
 
     #jk {
         margin-top: -50px;
+    }
+
+    .portfolio p {
+        font-size: 0.8em;
+    }
+    
+    .portfolio h3 {
+        font-size: 1em;
     }
 }
