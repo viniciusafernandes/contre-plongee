@@ -571,7 +571,20 @@ main h4 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
-  @media (max-width: 758px) {
+  @media (max-width: 900px) {
+
+    .parallax {
+        background-image: url('imagens/bg1.jpg');
+    }
+    #bv {
+        font-size: 3em;
+        margin-left: 30px;
+    }
+
+    #bn {
+        font-size: 1.7em;
+        margin-left: 30px;
+    }
 
     .sobre-texto {
         transform: scale(0.9);
@@ -645,5 +658,25 @@ main h4 {
 
     .port {
         margin-left: 30px;
+    }
+
+    .processo-right {
+        display: none;
+    }
+
+    .processo p {
+        width: 400px;
+    }
+
+    .sobre p {
+        width: 400px;
+    }
+
+    .processo-content {
+        margin-right: 0px;
+    }
+
+    #sh {
+        display: none;
     }
 }
