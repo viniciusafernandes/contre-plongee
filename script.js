@@ -10,7 +10,7 @@ function slider() {
     contador = 0;
   }
 
-  box.style.transform = `translateX(${-contador * 700}px)`;
+  box.style.transform = `translateX(${-contador * 640}px)`;
 }
 
 setInterval(slider, 3500);
@@ -27,7 +27,7 @@ function toggleInfo(item) {
         if (i !== info && i.style.maxHeight) {
             i.style.maxHeight = null;
             i.style.opacity = '0';
-            setTimeout(() => i.style.display = 'none', 200); // Aguarda a transição antes de ocultar
+            setTimeout(() => i.style.display = 'none', 500); // Aguarda a transição antes de ocultar
         }
     });
 
@@ -41,7 +41,7 @@ function toggleInfo(item) {
         setTimeout(() => {
             info.style.maxHeight = info.scrollHeight + 'px';
             info.style.opacity = '1';
-        }, 10); // Define um pequeno atraso para iniciar a transição
+        }, 0); // Define um pequeno atraso para iniciar a transição
         // Rolagem suave para a seção de processo
         section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -58,7 +58,7 @@ function toggleFaq(item) {
         if (i !== faqInfo && i.style.maxHeight) {
             i.style.maxHeight = null;
             i.style.opacity = '0';
-            setTimeout(() => i.style.display = 'none', 200); // Aguarda a transição antes de ocultar
+            setTimeout(() => i.style.display = 'none', 500); // Aguarda a transição antes de ocultar
         }
     });
 
@@ -72,7 +72,7 @@ function toggleFaq(item) {
         setTimeout(() => {
             faqInfo.style.maxHeight = faqInfo.scrollHeight + 'px';
             faqInfo.style.opacity = '1';
-        }, 10); // Define um pequeno atraso para iniciar a transição
+        }, 0); // Define um pequeno atraso para iniciar a transição
         // Rolagem suave para a seção de FAQ
         section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -142,3 +142,49 @@ leftBtn.addEventListener('click', function() {
     const leftItem = currentId === 0 ? carouselItems[carouselItems.length-1] : carouselItems[currentId-1];
     leftItem.classList.add('carousel__item--left');
 });
+
+
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+      this.mobileMenu = document.querySelector(mobileMenu);
+      this.navList = document.querySelector(navList);
+      this.navLinks = document.querySelectorAll(navLinks);
+      this.activeClass = "active";
+  
+      this.handleClick = this.handleClick.bind(this);
+    }
+  
+    animateLinks() {
+      this.navLinks.forEach((link, index) => {
+        link.style.animation
+          ? (link.style.animation = "")
+          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`);
+      });
+    }
+  
+    handleClick() {
+      this.navList.classList.toggle(this.activeClass);
+      this.mobileMenu.classList.toggle(this.activeClass);
+      this.animateLinks();
+    }
+  
+    addClickEvent() {
+      this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+  
+    init() {
+      if (this.mobileMenu) {
+        this.addClickEvent();
+      }
+      return this;
+    }
+  }
+  
+  const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li",
+  );
+  mobileNavbar.init();

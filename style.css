@@ -1,498 +1,635 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; 
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif; 
 }
 
-@media (min-width: 0px) {   
-    
-    .portfolio {
-        box-sizing: border-box;
-        background-color: #F8F5F0;
-        color: white;
-        display: grid;
-        place-items: center;
-        min-height: 100vh;
-        margin-bottom: -300px;
-        font-family: "Afacad Flux", sans-serif;
-      }
-      
-      .portfolio p {
-        font-size: 1em;
-      }
-
-      .portfolio h3 {
-        font-size: 1.5em;
-      }
-
-      .portfolio a {
-        font-family: "Afacad Flux", sans-serif;
-      }
-
-      .carousel {
-        position: relative;
-      }
-      .carousel__item {
-        margin-top: -200px;
-        position: relative;
-        height: 38rem;
-        width: 28rem;
-        border-radius: 3px;
-        overflow: hidden;
-        box-shadow: 0 1rem 4rem rgba(0,0,0,.5);
-        position: absolute;
-        transform: translate(-50%,-50%) scale(.1);
-        z-index: 0;
-        transition: all .2s linear;
-      }
-      .carousel__item img {
-        width: 100%;
-        min-height: 100%;
-        object-fit: cover;
-      }
-      
-      .carousel__item--main {
-        transform: translate(-50%,-50%) scale(1);
-        z-index: 2;
-        cursor: pointer;
-      }
-      
-      .carousel__item--left {
-        transform: translate(-110%,-50%) scale(.9);
-        z-index: 1;
-      }
-      .carousel__item--right {
-        transform: translate(10%,-50%) scale(.9);
-        z-index: 1;
-      }
-      .carousel__item--left img, .carousel__item--right img {
-        filter: grayscale(80%);
-      }
-      
-      .carousel__item--right:hover {
-        transform: translate(10%,-50%) scale(1.2);
-        z-index: 3;
-        cursor: pointer;
-      }
-      .carousel__item--left:hover {
-        transform: translate(-110%,-50%) scale(1.2);
-        z-index: 3;
-        cursor: pointer;
-      }
-      .carousel__item--main:hover {
-        transform: translate(-50%,-50%) scale(1.2);
-      }
-      .carousel__item:hover > .carousel__text {
-        opacity: 1;
-      }
-      .carousel__item:hover img {
-        filter: grayscale(0%);
-      }
-      
-      .carousel__text {
-        position: absolute;
-        bottom: 0;
-        z-index: 4;
-        opacity: 0;
-        transition: opacity .2s;
-        width: 100%;
-        text-align: center;
-        background-color: rgba(0,0,0,.5);
-        padding: 2rem 1rem;
-        color: #fff;
-      }
-      
-      
-      .carousel__btns {
-        position: absolute;
-        transform: translate(-50%, 22rem);
-        display: flex;
-        gap: 2rem;
-        margin-top: -200px;
-      }
-      .carousel__btn {
-        background-color: transparent;
-        height: 5rem;
-        width: 5rem;
-        border-radius: 50%;
-        border:1px solid currentColor;
-        color: #c11212;
-        cursor: pointer;
-      }
-      .carousel__btn svg {
-        height: 1.8rem;
-        width: 1.8rem;
-      }
-      .carousel__btn:hover {
-        color: #940d0d;
-      }
-      
-      .aport {
-        text-decoration: underline;
-        color: white;
-      }
-
-      .aport:hover {
-        color: lightgray;
-      }
-
-    .port {
-        margin-left: 160px;
-        margin-top: 30px;
-        color: #c11212;
-        text-indent: 10px;
+@media screen and (min-width: 757px) and (max-width: 1700px) {
+    .aba {
+        display: none;
     }
+}
 
-    .carrossel {
-        filter: drop-shadow(0px 0px 2px #000);
-        overflow: hidden;
-        width: 700px;
-        height: auto;
-        justify-content: center;
-        margin-right: 150px;
-      }
-      
-      .container {
-        display: flex;
-        transition: 0.7s ease-in-out;
-        transform: translateX(0);
-      }
-      
-      img {
-        width: 700px;
-        height: auto;
-      }
-
-
-    body {
-        background-color: #F8F5F0; /* Fundo suave */
-    }
-
-    p {
-        font-family: "Afacad Flux", sans-serif;
-        font-size: 1.5em;
-    }
-
-    h2 {
-        margin-left: 10px;
-        font-family: "Rubik", sans-serif;
-        font-size: 2.5em;
-    }
-
-    h3 {
-        font-family: "Afacad Flux", sans-serif;
-    }
-
-    /* Estilos do Header */
-    header {
-        font-size: 0.8em;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #1a1a1a00; /* Opacidade total */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        transition: background-color 0.3s, opacity 0.3s;
-        z-index: 1000;
-        border-radius: 0px 0px 5px 2px;
-    }
-
-    .menu {
-        background-color: #1a1a1a00;
-        border-radius: 10px;
-        padding: 15px 20px;
-    }
-
-    #ctt {
-        background-color: #c11212;
-        border-radius: 5px;
-        font-size: 1em;
-    }
-
-    .container-logo {
-        display: flex;
-        align-items: center;
-    }
-
-    .logo-texto img {
-        width: 200px;
-        height: auto;
-    }
-
-    header a {
-        font-family: "Rubik", sans-serif;
-        font-weight: 600;
-    }
-
-    header a:hover {
-        text-decoration: underline;
-    }
-
-    /* Transição suave ao descer */
-    html {
-        scroll-behavior: smooth;
-    }
-
-    /* Estilos do menu */
-    .menu ul {
-        display: flex;
-        list-style: none;
-    }
-
-    .menu li {
-        margin: 0 20px;
-    }
-
-    .menu li a {
-        font-size: 1.5em;
-        text-decoration: none;
-        color: white;
-        transition: transform 0.3s;
-    }
-
-    .menu li:hover {
-        text-decoration: underline;
-        text-decoration-color: white;
-        transform: scale(1.09);
-    }
-
-    /* Estilos do Main */
-    main h1 {
-        font-family: "Rubik", sans-serif;
-        font-size: 4.5em;
-        margin-left: 150px;
-        margin-bottom: 10px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.667);
-        text-align: left;
-    }
-
-    main h4 {
-        font-family: "Rubik", sans-serif;
-        font-size: 2.5em;
-        margin-left: 150px;
-        margin-top: 0;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.628);
-        text-align: left;
-    }
-
-    /* Efeitos Parallax */
-    .parallax {
-        background-image: url(imagens/poster\ 21.06.10.GIF);
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        color: white;
-    }
-
-    /* Seção Sobre */
-    .sobre {
-        background-color: #1a1a1a;
-        color: white;
-        padding: 60px 20px;
-        text-align: center;
-    }
-
-    .sobre h2 {
-        text-indent: -10px;
-        text-align: left;
-        color: #c11212;
-        margin-bottom: 30px;
-    }
-
-    .sobre p {
-        text-align: justify;
-        width: 800px;
-    }
-
-    .sobre-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-top: 20px;
-    }
+@media screen and (max-width: 758px) {
 
     .sobre-texto {
-        flex: 0 1 50%;
-        margin-left: 150px;
-        margin-right: 50px;
+        transform: scale(0.9);
+    }
+    #sobre .sobre-content {
+        flex-direction: column !important;
+        align-items: center;
     }
 
-    .sobre-video {
-        margin-right: 150px;
+    #sobre .sobre-texto {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 90% !important;
     }
 
-    .sobre iframe {
-        width: 700px;
-        height: 393.75px;
-        border-radius: 5px;
-        margin-right: 150px;
+    #sobre .carrossel {
+        margin-right: 0 !important;
+        margin-top: 20px !important;
+        width: 90% !important;
     }
 
-    /* Seção Processo */
-    .processo {
-        padding: 40px 20px;
-        text-align: left;
-        color: white;
+    #sobre .sobre p {
+        width: 100% !important;
     }
 
-    .processo p {
-        text-align: justify;
-        color: #47403d;
-        width: 800px;
-        margin-left: 150px;
-    }
+    /* 
+    
+    */
 
-    .processo h2 {
-        margin-left: 150px;
-        color: #c11212;
-        margin-bottom: 30px;
-    }
 
-    .processo-content {
-        display: flex;
-        justify-content: space-between;
+    .processo-left {
+        transform: scale(0.9);
+    }
+    #processo .processo-content {
+        flex-direction: column !important;
+        align-items: center;
     }
 
     .processo-left {
-        flex: 0 1 50%;
-        padding-right: 20px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 90% !important;
     }
 
-    .processo-right {
-        flex-direction: column;
-        gap: 24px;
+    #processo .processo-item {
+        margin-right: 0 !important;
+        margin-top: 20px !important;
+        width: 90% !important;
     }
 
-    .processo-item {
-        font-family: "Afacad Flux", sans-serif;
-        background-color: #F8F5F0;
-        border: 0.3px solid #c11212;
-        color: #1a1a1a;
-        border-radius: 5px;
-        padding: 20px 8px;
-        width: 700px;
-        text-align: center;
-        cursor: pointer;
-        transition: transform 0.2s ease-in-out;
-        margin-right: 150px;
-        margin-bottom: 10px;
-    }
-
-    .processo-item h3 {
-        color: #c11212;
-        font-size: 1.4em;
-    }
-
-    .processo-item:hover {
-        transform: scale(1.05);
-        box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.228);
-    }
-
-    /* Geral faq e processo */
-
-    .info, .faq-info {
-        font-family: "Afacad Flux", sans-serif;
-    }
-
-
-    /* FAQ */
-    .faq {
-        padding: 40px 20px;
-        
-        margin-right: 150px;
-    }
-
-    .faq h2 {
-        margin-left: 150px;
-        color: #c11212;
-        margin-bottom: 40px;
-    }
-
-    .faq-item {
-        font-family: "Afacad Flux", sans-serif;
-        background-color: #F8F5F0;
-        color: #1a1a1a;
-        border: 0.3px solid #c11212;
-        border-radius: 5px;
-        margin-top: 10px;
-        margin-left: 150px;
-        padding: 20px;
-        cursor: pointer;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .faq-item h3 {
-        color: #c11212;
-    }
-
-    .faq-item:hover {
-        transform: scale(1.025);
-        box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.228);
-    }
-
-    /* Rodapé */
-    .footer {
-        padding: 40px 20px;
-        text-align: left;
-        background-color: #1a1a1a;
-        color: white;
-    }
-
-    .footer h2 {
-        margin-left: 150px;
-        color: #c11212;
-        margin-bottom: 20px;
-    }
-
-    .footer p {
-        font-size: 1em;
-        margin-bottom: 5px;
-        margin-left: 150px;
-    }
-
-    .footer a {
-        text-decoration: underline;
-        color: white;
-        font-family: "Afacad Flux", sans-serif;
-    }
-
-    /* Mapa */
-    .myMap {
-        border-radius: 10px;
-        margin-top: 20px;
-        filter: grayscale(100%) invert(90%);
-    }
-
-    /* Transição suave de altura e opacidade para as informações */
-    .info, .faq-info {
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        transition: max-height 0.6s ease, opacity 0.6s ease;
-    }
-
-    .info.show, .faq-info.show {
-        max-height: 300px;
-        opacity: 1;
-    }
-
-    /* Boneca */
-    .boneca-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .boneca {
-        width: 700px;
-        height: auto;
+    #processo .processo p {
+        width: 100% !important;
     }
 }
+
+
+.portfolio {
+    box-sizing: border-box;
+    background-color: #F8F5F0;
+    color: white;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin-bottom: -300px;
+    font-family: "Afacad Flux", sans-serif;
+    }
+    
+    .portfolio p {
+    font-size: 1em;
+    }
+
+    .portfolio h3 {
+    font-size: 1.5em;
+    }
+
+    .portfolio a {
+    font-family: "Afacad Flux", sans-serif;
+    }
+
+    .carousel {
+    position: relative;
+    }
+    .carousel__item {
+    margin-top: -200px;
+    position: relative;
+    height: 38rem;
+    width: 28rem;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1rem 4rem rgba(0,0,0,.5);
+    position: absolute;
+    transform: translate(-50%,-50%) scale(.1);
+    z-index: 0;
+    transition: all .2s linear;
+    }
+    .carousel__item img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    }
+    
+    .carousel__item--main {
+    transform: translate(-50%,-50%) scale(1);
+    z-index: 2;
+    cursor: pointer;
+    }
+    
+    .carousel__item--left {
+    transform: translate(-110%,-50%) scale(.9);
+    z-index: 1;
+    }
+    .carousel__item--right {
+    transform: translate(10%,-50%) scale(.9);
+    z-index: 1;
+    }
+    .carousel__item--left img, .carousel__item--right img {
+    filter: grayscale(80%);
+    }
+    
+    .carousel__item--right:hover {
+    transform: translate(10%,-50%) scale(1.2);
+    z-index: 3;
+    cursor: pointer;
+    }
+    .carousel__item--left:hover {
+    transform: translate(-110%,-50%) scale(1.2);
+    z-index: 3;
+    cursor: pointer;
+    }
+    .carousel__item--main:hover {
+    transform: translate(-50%,-50%) scale(1.2);
+    }
+    .carousel__item:hover > .carousel__text {
+    opacity: 1;
+    }
+    .carousel__item:hover img {
+    filter: grayscale(0%);
+    }
+    
+    .carousel__text {
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+    opacity: 0;
+    transition: opacity .2s;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    padding: 2rem 1rem;
+    color: #fff;
+    }
+    
+    
+    .carousel__btns {
+    position: absolute;
+    transform: translate(-50%, 22rem);
+    display: flex;
+    gap: 2rem;
+    margin-top: -200px;
+    }
+    .carousel__btn {
+    background-color: transparent;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border:1px solid currentColor;
+    color: #c11212;
+    cursor: pointer;
+    }
+    .carousel__btn svg {
+    height: 1.8rem;
+    width: 1.8rem;
+    }
+    .carousel__btn:hover {
+    color: #940d0d;
+    }
+    
+    .aport {
+    text-decoration: underline;
+    color: white;
+    }
+
+    .aport:hover {
+    color: lightgray;
+    }
+
+.port {
+    margin-left: 160px;
+    margin-top: 30px;
+    color: #c11212;
+    text-indent: 10px;
+}
+
+.carrossel {
+    filter: drop-shadow(0px 0px 2px #000);
+    overflow: hidden;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    display: block;
+    justify-content: center;
+    margin-right: 150px;
+    }
+    
+    .container {
+    display: flex;
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
+    }
+    
+    img {
+    width: 100%;
+    max-width: 700px;
+    max-height: 100%;
+    }
+
+
+body {
+    background-color: #F8F5F0; 
+}
+
+p {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 1.5em;
+}
+
+h2 {
+    margin-left: 10px;
+    font-family: "Rubik", sans-serif;
+    font-size: 2.5em;
+}
+
+h3 {
+    font-family: "Afacad Flux", sans-serif;
+}
+
+/* Estilos do Header */
+header {
+    font-size: 0.8em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1a1a1a00; /* Opacidade total */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s, opacity 0.3s;
+    z-index: 1000;
+    border-radius: 0px 0px 5px 2px;
+}
+
+.menu {
+    background-color: #1a1a1a00;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+#ctt {
+    background-color: #c11212;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-texto img {
+    width: 200px;
+    height: auto;
+}
+
+header a {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Transição suave ao descer */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos do menu */
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu li a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.menu li:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    transform: scale(1.09);
+}
+
+/* Estilos do Main */
+main h1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 4.5em;
+    margin-left: 150px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.667);
+    text-align: left;
+}
+
+main h4 {
+    font-family: "Rubik", sans-serif;
+    font-size: 2.5em;
+    margin-left: 150px;
+    margin-top: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.628);
+    text-align: left;
+}
+
+/* Efeitos Parallax */
+.parallax {
+    background-image: url(imagens/poster\ 21.06.10.GIF);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+/* Seção Sobre */
+.sobre {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sobre h2 {
+    text-indent: -10px;
+    text-align: left;
+    color: #c11212;
+    margin-bottom: 30px;
+}
+
+.sobre p {
+    text-align: justify;
+    width: 640px;
+}
+
+.sobre-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.sobre-texto {
+    flex: 0 1 50%;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+.sobre-video {
+    margin-right: 150px;
+}
+
+.sobre iframe {
+    width: 700px;
+    height: 393.75px;
+    border-radius: 5px;
+    margin-right: 150px;
+}
+
+/* Seção Processo */
+.processo {
+    padding: 40px 20px;
+    text-align: left;
+    color: white;
+}
+
+.processo p {
+    text-align: justify;
+    color: #47403d;
+    width: 640px;
+    margin-left: 150px;
+}
+
+.processo h2 {
+    margin-left: 150px;
+    color: #c11212;
+    margin-bottom: 30px;
+}
+
+.processo-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.processo-left {
+    flex: 0 1 50%;
+    padding-right: 20px;
+}
+
+.processo-right {
+    flex-direction: column;
+    gap: 24px;
+}
+
+.processo-item {
+    font-family: "Afacad Flux", sans-serif;
+    background-color: #F8F5F0;
+    border: 0.3px solid #c11212;
+    color: #1a1a1a;
+    border-radius: 5px;
+    padding: 20px 8px;
+    width: 100%;
+    max-width: 640px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    margin-right: 150px;
+    margin-bottom: 10px;
+}
+
+.processo-item h3 {
+    color: #c11212;
+    font-size: 1.4em;
+}
+
+.processo-item:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.228);
+}
+
+/* Geral faq e processo */
+
+.info, .faq-info {
+    font-family: "Afacad Flux", sans-serif;
+}
+
+
+/* FAQ */
+.faq {
+    padding: 40px 20px;
+    margin-right: 150px;
+}
+
+.faq h2 {
+    margin-left: 150px;
+    color: #c11212;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    font-family: "Afacad Flux", sans-serif;
+    background-color: #F8F5F0;
+    color: #1a1a1a;
+    border: 0.3px solid #c11212;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 150px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-item h3 {
+    color: #c11212;
+}
+
+.faq-item:hover {
+    transform: scale(1.025);
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.228);
+}
+
+/* Rodapé */
+.footer {
+    padding: 40px 20px;
+    text-align: left;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.footer h2 {
+    margin-left: 150px;
+    color: #c11212;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 1em;
+    margin-bottom: 5px;
+    margin-left: 150px;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: white;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+/* Mapa */
+.myMap {
+    border-radius: 10px;
+    margin-top: 20px;
+    filter: grayscale(100%) invert(90%);
+}
+
+/* Transição suave de altura e opacidade para as informações */
+.info, .faq-info {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+.info.show, .faq-info.show {
+    max-height: 300px;
+    opacity: 1;
+}
+
+/* Boneca */
+.boneca-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boneca {
+    width: 700px;
+    height: auto;
+}
+
+
+
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 1700px) {
+
+    .boneca-container {
+        display: none;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 7vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #242221;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Contre Plongée</title>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
@@ -35,12 +36,17 @@
         </div>
 
         <nav class="menu">
-            <ul>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#processo">Processo de Criação</a></li>
                 <li><a href="#faq">Perguntas</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="#port">Portfólio</a></li>
                 <li id="ctt"><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -53,7 +59,7 @@
         </section>
 
         <section id="sobre" class="sobre">
-            <div class="sobre-content">
+            <div class="sobre-content" class="container">
                 <div class="sobre-texto">
                     <h2>Sobre nós</h2>
                     <p style="font-size: 1.5em;">Enchanté, Contre-Plongèe!</p>
@@ -66,7 +72,7 @@
                     <br>
                     <p>Conheça nossa equipe!</p>
                 </div>
-                <div class="carrossel">
+                <div class="carrossel" class="aba">
                     <div class="container">
                       <img src="imagens/grupo1.png" alt="" />
                       <img src="imagens/grupo2.png" alt="" />
@@ -123,14 +129,9 @@
             </div>
             <div class="faq-item" onclick="toggleFaq(this)">
                 <h3>Qual a importância de se contratar uma produtora audiovisual?</h3>
-                <div class="faq-info">Contratar uma produtora audiovisual é fundamental por várias razões:
-                    <br>
-                    Expertise Técnica: Profissionais qualificados trazem conhecimentos em cinematografia, edição e sonorização, garantindo um produto final de alta qualidade. <br>
-                    Criatividade e Originalidade: Uma produtora possui experiência em contar histórias de maneira envolvente, ajudando a diferenciar o projeto no mercado. <br>
-                    Economia de Tempo: A produção audiovisual envolve muitos detalhes; uma produtora cuida de toda a logística, permitindo que o cliente se concentre em outras prioridades. <br>
-                    Acesso a Equipamentos e Recursos: Produtoras têm acesso a tecnologia e equipamentos de ponta, que podem ser caros para adquirir individualmente. <br>
-                    Rede de Contatos: Elas frequentemente têm conexões com talentos, locações e outros fornecedores, facilitando a execução do projeto. <br>
-                    Estratégia de Distribuição: Uma produtora pode ajudar a definir a melhor forma de distribuir e promover o conteúdo, maximizando o alcance e o impacto.</div>
+                <div class="faq-info">
+                    Contratar uma produtora audiovisual é essencial para garantir alta qualidade técnica, criatividade no storytelling e economia de tempo. <br>
+                    Elas oferecem acesso a equipamentos profissionais, conexões estratégicas e suporte na distribuição, maximizando o impacto do projeto.</div>
             </div>
             <div class="faq-item" onclick="toggleFaq(this)">
                 <h3>Qual o foco da Contre?</h3>
@@ -145,6 +146,7 @@
             </div>
         </section>
 
+        <h2 id="port" style="color: #F8F5F0;"><br>A</h2>
         <h2 class="port">Confira nossos trabalhos!</h2>
         <section class="portfolio">
             <div class="carousel">
