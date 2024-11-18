@@ -611,9 +611,7 @@ main h4 {
         width: 100% !important;
     }
 
-    .carousel {
-        display: none;
-    }
+    
 
     #pdif {
         display: none;
@@ -686,5 +684,22 @@ main h4 {
 
     #sf {
         padding-bottom: -100px;
+    }
+
+    .carousel__item {
+        margin-top: -130px;
+        height: 10rem;
+        width: 7rem;
+    }
+
+    .carousel__btn {
+        margin-top: -100px;
+        height: 2rem;
+        width: 2rem;
+        margin-bottom: 100px;
+    }
+
+    #jk {
+        margin-top: -50px;
     }
 }
