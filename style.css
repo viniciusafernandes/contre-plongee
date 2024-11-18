@@ -668,6 +668,10 @@ main h4 {
         width: 400px;
     }
 
+    .processo-item {
+        display: none;
+    }
+
     .sobre p {
         width: 400px;
     }
@@ -678,5 +682,9 @@ main h4 {
 
     #sh {
         display: none;
+    }
+
+    #sf {
+        padding-bottom: -100px;
     }
 }
