@@ -5,69 +5,6 @@ box-sizing: border-box;
 font-family: 'Roboto', sans-serif; 
 }
 
-@media screen and (min-width: 757px) and (max-width: 1700px) {
-    .aba {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 758px) {
-
-    .sobre-texto {
-        transform: scale(0.9);
-    }
-    #sobre .sobre-content {
-        flex-direction: column !important;
-        align-items: center;
-    }
-
-    #sobre .sobre-texto {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        width: 90% !important;
-    }
-
-    #sobre .carrossel {
-        margin-right: 0 !important;
-        margin-top: 20px !important;
-        width: 90% !important;
-    }
-
-    #sobre .sobre p {
-        width: 100% !important;
-    }
-
-    /* 
-    
-    */
-
-
-    .processo-left {
-        transform: scale(0.9);
-    }
-    #processo .processo-content {
-        flex-direction: column !important;
-        align-items: center;
-    }
-
-    .processo-left {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        width: 90% !important;
-    }
-
-    #processo .processo-item {
-        margin-right: 0 !important;
-        margin-top: 20px !important;
-        width: 90% !important;
-    }
-
-    #processo .processo p {
-        width: 100% !important;
-    }
-}
-
-
 .portfolio {
     box-sizing: border-box;
     background-color: #F8F5F0;
@@ -633,3 +570,80 @@ main h4 {
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+
+  @media (max-width: 758px) {
+
+    .sobre-texto {
+        transform: scale(0.9);
+    }
+    #sobre .sobre-content {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    #sobre .sobre-texto {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 90% !important;
+    }
+
+    #sobre .carrossel {
+        display: none;
+        margin-right: 0 !important;
+        margin-top: 20px !important;
+        width: 90% !important;
+    }
+
+    #sobre .sobre p {
+        width: 100% !important;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    #pdif {
+        display: none;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    iframe {
+        display: none;
+    }
+
+    * {
+        margin-left: 0px;
+    }
+
+    .footer, .faq {
+        margin-left: -130px;
+    }
+
+    .faq-item {
+        width: 100%;
+    }
+
+    .faq-info {
+        font-size: 0.8em;
+    }
+
+    .sobre-content {
+        width: 100vw;
+        margin-left: -30px;
+    }
+
+    .processo-content {
+        margin-left: -130px;
+    }
+
+    .port {
+        margin-left: 30px;
+    }
+}
