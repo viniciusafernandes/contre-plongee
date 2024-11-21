@@ -575,7 +575,7 @@ main h4 {
 
     .parallax {
         background-image: 
-        url(imagens/bg1.jpg), linear-gradient(to top, rgba(255, 0, 0, 1), rgba(0, 0, 0, 1)); 
+        url(imagens/bg1.jpg),linear-gradient(to top, rgba(255, 0, 0, 1), rgba(0, 0, 0, 1)); 
     }
     #bv {
         font-size: 2.5em;
@@ -688,14 +688,14 @@ main h4 {
     }
 
     .carousel__item {
-        translate: 0px -40px;
+        translate: 0px -30px;
         margin-top: -130px;
-        height: 17rem;
-        width: 12rem;
+        height: 14rem;
+        width: 10rem;
     }
 
     .carousel__btn {
-        translate: 0px -160px;
+        translate: 0px -180px;
         height: 2rem;
         width: 2rem;
     }
