@@ -688,14 +688,14 @@ main h4 {
     }
 
     .carousel__item {
-        translate: 0px -30px;
+        translate: 0px -40px;
         margin-top: -130px;
-        height: 14rem;
-        width: 9rem;
+        height: 17rem;
+        width: 12rem;
     }
 
     .carousel__btn {
-        translate: 0px -180px;
+        translate: 0px -160px;
         height: 2rem;
         width: 2rem;
     }
